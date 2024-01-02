@@ -9,10 +9,10 @@ export const ExportFormatData: ExportFormatDataMap = {
             type: AnnotationFormatType.YOLO,
             label: 'A .zip package containing files in YOLO format.'
         },
-        {
-            type: AnnotationFormatType.VOC,
-            label: 'A .zip package containing files in VOC XML format.'
-        },
+        // {
+        //     type: AnnotationFormatType.VOC,
+        //     label: 'A .zip package containing files in VOC XML format.'
+        // },
         {
             type: AnnotationFormatType.CSV,
             label: 'Single CSV file.'
