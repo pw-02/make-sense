@@ -4,6 +4,10 @@ export interface IEditorFeature {
     imageAlt:string;
 }
 
+export const EditorFeatureData: IEditorFeature[] = [];
+
+
+/*
 export const EditorFeatureData: IEditorFeature[] = [
     {
         displayText: 'Open source and free to use under GPLv3 license',
@@ -36,3 +40,5 @@ export const EditorFeatureData: IEditorFeature[] = [
         imageAlt: 'robot',
     },
 ];
+
+*/

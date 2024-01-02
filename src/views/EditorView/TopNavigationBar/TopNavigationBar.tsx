@@ -56,21 +56,21 @@ const TopNavigationBar: React.FC<IProps> = (props) => {
                     <DropDownMenu/>
                 </div>
                 <div className='NavigationBarGroupWrapper middle'>
-                    <div className='ProjectName'>Project Name:</div>
+                    {/* <div className='ProjectName'>Project Name:</div>
                     <TextInput
                         isPassword={false}
                         value={props.projectData.name}
                         onChange={onChange}
                         onFocus={onFocus}
-                    />
+                    /> */}
                 </div>
                 <div className='NavigationBarGroupWrapper'>
-                    <ImageButton
+                    {/* <ImageButton
                         image={'ico/github-logo.png'}
                         imageAlt={'github-logo.png'}
                         buttonSize={{width: 30, height: 30}}
                         href={Settings.GITHUB_URL}
-                    />
+                    /> */}
                 </div>
             </div>
         </div>

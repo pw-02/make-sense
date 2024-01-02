@@ -51,6 +51,53 @@ export const DropDownMenuData: DropDownMenuNode[] = [
                 disabled: false,
                 onClick: () => store.dispatch(updateActivePopupType(PopupWindowType.EXPORT_ANNOTATIONS))
             },
+        ]
+    },
+]
+
+
+
+/*
+
+export const DropDownMenuData: DropDownMenuNode[] = [
+    {
+        name: 'Actions',
+        imageSrc: 'ico/actions.png',
+        imageAlt: 'actions',
+        disabled: false,
+        children: [
+            {
+                name: 'Edit Labels',
+                description: 'Modify labels list',
+                imageSrc: 'ico/tags.png',
+                imageAlt: 'labels',
+                disabled: false,
+                onClick: () => store.dispatch(updateActivePopupType(PopupWindowType.UPDATE_LABEL))
+            },
+            {
+                name: 'Import Images',
+                description: 'Load more images',
+                imageSrc: 'ico/camera.png',
+                imageAlt: 'images',
+                disabled: false,
+                onClick: () => store.dispatch(updateActivePopupType(PopupWindowType.IMPORT_IMAGES))
+            },
+            {
+                name: 'Import Annotations',
+                description: 'Import annotations from file',
+                imageSrc: 'ico/import-labels.png',
+                imageAlt: 'import-labels',
+                disabled: false,
+                onClick: () => store.dispatch(updateActivePopupType(PopupWindowType.IMPORT_ANNOTATIONS))
+            },
+            {
+                name: 'Export Annotations',
+                description: 'Export annotations to file',
+                imageSrc: 'ico/export-labels.png',
+                imageAlt: 'export-labels',
+                disabled: false,
+                onClick: () => store.dispatch(updateActivePopupType(PopupWindowType.EXPORT_ANNOTATIONS))
+            },
             {
                 name: 'Run AI locally',
                 description: 'Run annotation model in browser',
@@ -94,4 +141,4 @@ export const DropDownMenuData: DropDownMenuNode[] = [
         ]
     }
 ]
-
+*/

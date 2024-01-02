@@ -7,6 +7,12 @@ export interface ISocialMedia {
     href:string;
     tooltipMessage:string;
 }
+export const SocialMediaData: ISocialMedia[] = [
+  
+];
+
+
+/*
 
 export const SocialMediaData: ISocialMedia[] = [
     {
@@ -38,3 +44,5 @@ export const SocialMediaData: ISocialMedia[] = [
         tooltipMessage: 'Fight along with us in Kaggle competitions on Twitch'
     },
 ];
+
+*/
