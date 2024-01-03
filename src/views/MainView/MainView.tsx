@@ -75,18 +75,43 @@ const MainView: React.FC = () => {
                 <div
                     className='EditorFeaturesTilesWrapper'
                 >
-                    <img
+                    {/* <img
                         draggable={false}
                         alt={data.imageAlt}
                         src={data.imageSrc}
-                    />
+                    /> */}
                     <div className='EditorFeatureLabel'>
                         {data.displayText}
+                    </div>
+                    <div className='EditorFeatureSubLabel'>
+                        {data.imageAlt}
                     </div>
                 </div>
             </div>;
         });
     };
+
+    // const getEditorFeatureTiles = () => {
+    //     return EditorFeatureData.map((data: IEditorFeature) => {
+    //         return <div
+    //             className='EditorFeaturesTiles'
+    //             key={data.displayText}
+    //         >
+    //             <div
+    //                 className='EditorFeaturesTilesWrapper'
+    //             >
+    //                 <img
+    //                     draggable={false}
+    //                     alt={data.imageAlt}
+    //                     src={data.imageSrc}
+    //                 />
+    //                 <div className='EditorFeatureLabel'>
+    //                     {data.displayText}
+    //                 </div>
+    //             </div>
+    //         </div>;
+    //     });
+    // };
 
     return (
         <div className={getClassName()}>
@@ -107,7 +132,8 @@ const MainView: React.FC = () => {
                     <img
                         draggable={false}
                         alt={'main-logo'}
-                        src={'ico/main-image-color.png'}
+                        src={'ico/hdrfs-logo.png'}
+                        //src={'ico/main-image-color.png'}
                     />
                 </div>
                 <div className='EditorFeaturesWrapper'>

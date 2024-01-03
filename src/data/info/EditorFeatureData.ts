@@ -4,7 +4,15 @@ export interface IEditorFeature {
     imageAlt:string;
 }
 
-export const EditorFeatureData: IEditorFeature[] = [];
+export const EditorFeatureData: IEditorFeature[] = [
+
+    {
+        displayText: 'HARNESSING THE DATA REVOLUTION FOR FIRE SCIENCE',
+        imageSrc: 'ico/open-source.png',
+        imageAlt: 'Increasing the capacity of Nevada for wildland fire research, education and workforce development',
+    },
+
+];
 
 
 /*
