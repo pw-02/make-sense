@@ -18,6 +18,7 @@ const MainView: React.FC = () => {
         setProjectInProgress(true);
     };
 
+
     const endProject = () => {
         setProjectInProgress(false);
         setProjectCanceled(true);
@@ -86,6 +87,9 @@ const MainView: React.FC = () => {
                     <div className='EditorFeatureSubLabel'>
                         {data.imageAlt}
                     </div>
+                    <TextButton
+                        label={'Learn More'}
+                        onClick={() => window.open('https://hdrfs.epscorspo.nevada.edu/', '_blank')}/>       
                 </div>
             </div>;
         });

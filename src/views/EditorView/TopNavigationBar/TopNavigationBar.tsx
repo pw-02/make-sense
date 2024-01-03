@@ -46,10 +46,12 @@ const TopNavigationBar: React.FC<IProps> = (props) => {
                     >
                         <img
                             draggable={false}
-                            alt={'make-sense'}
-                            src={'/make-sense-ico-transparent.png'}
+                            alt={'hdrfs'}
+                            //src={'/make-sense-ico-transparent.png'}
+                            src={'ico/hdrfs-logo.png'}
+
                         />
-                        Make Sense
+                        HDRFS
                     </div>
                 </div>
                 <div className='NavigationBarGroupWrapper'>

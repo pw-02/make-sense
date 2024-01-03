@@ -251,6 +251,15 @@
       
     }
 
+    > .TextButton{
+      color: black;
+      font-weight:bold;
+      background-color: rgb(224, 115, 36);;
+      width: 80px;
+      text-align: center;
+    }
+   
+
     > img {
       filter: brightness(0) invert(1);
       max-width: 60px;
