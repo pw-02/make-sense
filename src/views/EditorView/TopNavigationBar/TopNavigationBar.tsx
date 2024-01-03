@@ -48,7 +48,7 @@ const TopNavigationBar: React.FC<IProps> = (props) => {
                             draggable={false}
                             alt={'hdrfs'}
                             //src={'/make-sense-ico-transparent.png'}
-                            src={'ico/hdrfs-logo.png'}
+                            src={'ico/hdrfs-logo-only.png'}
 
                         />
                         HDRFS

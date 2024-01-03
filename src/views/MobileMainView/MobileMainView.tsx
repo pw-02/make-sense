@@ -68,7 +68,9 @@ const MobileMainView: React.FC<IProps> = ({size}) => {
                 <img
                     draggable={false}
                     alt={"make-sense"}
-                    src={"/make-sense-ico-transparent.png"}
+                    //src={"/make-sense-ico-transparent.png"}
+                    src={'ico/hdrfs-logo-only.png'}
+
                 />
                 Make Sense
             </div>
