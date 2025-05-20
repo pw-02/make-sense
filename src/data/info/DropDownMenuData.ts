@@ -35,14 +35,14 @@ export const DropDownMenuData: DropDownMenuNode[] = [
                 disabled: false,
                 onClick: () => store.dispatch(updateActivePopupType(PopupWindowType.IMPORT_IMAGES))
             },
-            {
-                name: 'Import Annotations',
-                description: 'Import annotations from file',
-                imageSrc: 'ico/import-labels.png',
-                imageAlt: 'import-labels',
-                disabled: false,
-                onClick: () => store.dispatch(updateActivePopupType(PopupWindowType.IMPORT_ANNOTATIONS))
-            },
+            // {
+            //     name: 'Import Annotations',
+            //     description: 'Import annotations from file',
+            //     imageSrc: 'ico/import-labels.png',
+            //     imageAlt: 'import-labels',
+            //     disabled: false,
+            //     onClick: () => store.dispatch(updateActivePopupType(PopupWindowType.IMPORT_ANNOTATIONS))
+            // },
             {
                 name: 'Export Annotations',
                 description: 'Export annotations to file',
