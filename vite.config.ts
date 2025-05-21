@@ -29,7 +29,8 @@ export default ({ mode }: UserConfig): UserConfigExport => {
               '@tensorflow/tfjs-backend-cpu',
               '@tensorflow/tfjs-backend-webgl',
               '@tensorflow/tfjs-core',
-              '@tensorflow/tfjs-node'],
+              // '@tensorflow/tfjs-node'
+            ],
             models: [
               '@tensorflow-models/coco-ssd',
               '@tensorflow-models/posenet',

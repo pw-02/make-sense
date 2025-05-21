@@ -5,10 +5,10 @@ import {AnnotationFormatType} from './enums/AnnotationFormatType';
 export type ExportFormatDataMap = Record<LabelType, ILabelFormatData[]>;
 export const ExportFormatData: ExportFormatDataMap = {
     [LabelType.RECT]: [
-        {
-            type: AnnotationFormatType.YOLO,
-            label: 'A .zip package containing files in YOLO format.'
-        },
+        // {
+        //     type: AnnotationFormatType.YOLO,
+        //     label: 'A .zip package containing files in YOLO format.'
+        // },
         // {
         //     type: AnnotationFormatType.VOC,
         //     label: 'A .zip package containing files in VOC XML format.'
