@@ -7,8 +7,6 @@
     <img width="100" src=".//public/favicon.png" alt="make sense logo">
     </br>
 </p>
-Leverage our bounding box labeling functionality to prepare a data set and use it to train your first state-of-the-art object detection model. 
-
 ## 💻 Local Setup
 
 ```bash
