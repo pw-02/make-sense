@@ -49,8 +49,18 @@ docker pull pwatters991/hdrfs-labelling:latest
 docker run -dit -p 3000:3000 --restart=always --name=hdrfs-labelling pwatters991/hdrfs-labelling:latest
 ```
 
+## Optional: Production Deployment
 
+```bash
+# Build your app for production by running this command in the project folder.
+# The output is a production-ready bundle of the web application, generated in a folder called 'dist'.
+npm run build
+```
 
+The contents of the dist folder can then be:
+
+- ​	Uploaded to any static web hosting service (Netlify, Vercel, GitHub Pages, etc.).
+- ​	Served by any web server (Apache, Nginx, CDN).
 
 ## 🔐 Privacy
 
