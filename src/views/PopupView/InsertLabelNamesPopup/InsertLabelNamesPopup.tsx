@@ -204,8 +204,8 @@ const InsertLabelNamesPopup: React.FC<IProps> = (
                         isUpdate ?
                             'You can now edit the label names you use to describe the objects in the photos. Use the ' +
                             '+ button to add a new empty text field.' :
-                            'Before you start, you can create a list of labels you plan to assign to objects in your ' +
-                            'project. You can also choose to skip that part for now and define label names as you go.'
+                            'Before you start, you can create a list of labels you plan to assign to objects in your images, or load them from a .txt file. ' +
+                            'You may also skip this step and define labels as you go.'
                     }
                 </div>
                 <div className='LabelsContainer'>

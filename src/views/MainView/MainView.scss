@@ -230,26 +230,35 @@
     //   user-select: none;
     // }
 
-        .EditorFeatureLabel {
+    .EditorFeatureLabel {
       max-width: 700px;
       text-align: left;
       user-select: none;
-      font-size: 64px;
+      font-size: 53px;
       font-weight:bolder;
-      line-height: 68px; /* Adjust this value to your preference */
+      line-height: 60px; /* Adjust this value to your preference */
 
     }
 
-    .EditorFeatureSubLabel {
-      width: 570px;
-      text-align: left;
-      user-select: none;
-      font-size: 23px;
-      font-weight: 700;
-      color: rgb(224, 115, 36);
-      font-weight: 100;
-      
-    }
+
+ .EditorFeatureSubLabel {
+  width: 570px;
+  user-select: none;
+  color: #ffb84d; /* warm orange/gold for values */
+  font-size: 18px;
+  font-weight: 10;
+  text-align: center;
+  padding: 10px 0;
+}
+.pipe-separator {
+  color: #fff; /* white pipes */
+}
+.feature-heading {
+  font-weight: 900;
+  color:#ffb84d; /* pure white for headings on black */
+  //  text-decoration: underline;   //underline
+}
+
 
     > .TextButton{
       color: black;

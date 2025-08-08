@@ -29,6 +29,8 @@ const ImagesDropZone: React.FC<IProps> = (props: PropsWithChildren<IProps>) => {
     } as DropzoneOptions);
 
     const startEditor = (projectType: ProjectType) => {
+
+        
         if (acceptedFiles.length > 0) {
             const files = sortBy(acceptedFiles, (item: File) => item.name)
             props.updateProjectDataAction({
@@ -40,6 +42,15 @@ const ImagesDropZone: React.FC<IProps> = (props: PropsWithChildren<IProps>) => {
                 .createImageDataFromFileData(file)));
             props.updateActivePopupTypeAction(PopupWindowType.INSERT_LABEL_NAMES);
         }
+        // else {
+        //     // Handle case where no files are accepted
+        //     props.updateProjectDataAction({
+        //         ...props.projectData,
+        //         type: projectType
+        //     });
+        //     props.updateActivePopupTypeAction(PopupWindowType.INSERT_LABEL_NAMES);
+
+        // }
     };
 
     const getDropZoneContent = () => {
@@ -82,9 +93,36 @@ const ImagesDropZone: React.FC<IProps> = (props: PropsWithChildren<IProps>) => {
 
     return(
         <div className='ImagesDropZone'>
+
+            <div
+            className='instructions'
+            style={{
+                fontSize: '17px',
+                color: '#fff', // high contrast on orange
+                fontWeight: '8',
+                textAlign: 'center',
+                backgroundColor: 'rgba(0, 0, 0, 0.2)',
+                padding: '10px 15px',
+                borderRadius: '6px',
+                marginBottom: '10px'
+            }}
+            >
+            {acceptedFiles.length === 0 ? (
+                <p>
+                1. Select one or more images from your device to annotate. You can add more images later.
+                </p>
+            ) : (
+                <p>
+                2. Pick a labeling type - Object Detection or Image Classification.
+                </p>
+            )}
+            </div>
+
+
             <div {...getRootProps({className: 'DropZone'})}>
                 {getDropZoneContent()}
             </div>
+             
             <div className='DropZoneButtons'>
                 <TextButton
                     label={'Object Detection'}
@@ -97,6 +135,7 @@ const ImagesDropZone: React.FC<IProps> = (props: PropsWithChildren<IProps>) => {
                     onClick={startEditorWithImageRecognition}
                 />
             </div>
+    
         </div>
     )
 };

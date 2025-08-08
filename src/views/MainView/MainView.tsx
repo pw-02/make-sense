@@ -84,12 +84,30 @@ const MainView: React.FC = () => {
                     <div className='EditorFeatureLabel'>
                         {data.displayText}
                     </div>
-                    <div className='EditorFeatureSubLabel'>
-                        {data.imageAlt}
+                    <div className="EditorFeatureSubLabel">
+                        {(() => {
+                            const parts = data.imageAlt.split('|');
+                            return parts.map((part, index) => {
+                            const [heading, value] = part.split(':').map(s => s.trim());
+                            return (
+                                <span key={index}>
+                                <span className="feature-heading">{heading}:</span> {value}
+                                {index < parts.length - 1 && <span className="pipe-separator"> | </span>}
+                                </span>
+                            );
+                            });
+                        })()}
                     </div>
-                    <TextButton
+
+                     {!projectInProgress && <TextButton
+                    label={'START LABELING'}
+                    onClick={startProject}
+                    externalClassName={'get-started-button'}
+                    style={{ width: 'auto', fontSize: '18px', fontFamily: 'Arial, sans-serif', }}
+                    />}
+                    {/* <TextButton
                         label={'Learn More'}
-                        onClick={() => window.open('https://hdrfs.epscorspo.nevada.edu/', '_blank')}/>       
+                        onClick={() => window.open('https://hdrfs.epscorspo.nevada.edu/', '_blank')}/>        */}
                 </div>
             </div>;
         });
@@ -137,6 +155,10 @@ const MainView: React.FC = () => {
                         draggable={false}
                         alt={'main-logo'}
                         src={'ico/hdrfs-logo.png'}
+                        style={{ cursor: 'pointer' }}
+                        onClick={() =>
+                            window.open('https://hdrfs.epscorspo.nevada.edu/', '_blank')
+                        }
                         //src={'ico/main-image-color.png'}
                     />
                 </div>
@@ -153,15 +175,19 @@ const MainView: React.FC = () => {
             </div>
             <div className='RightColumn'>
                 <div />
+        
                 <ImagesDropZone />
+                {/* <div className='instructions'>
+                    <p>Please drag and drop your images here, or click to select them from your device.</p>
+                </div> */}
                 <div className='SocialMediaWrapper'>
                     {getSocialMediaButtons({ width: 30, height: 30 })}
                 </div>
-                {!projectInProgress && <TextButton
+                {/* {!projectInProgress && <TextButton
                     label={'Get Started'}
                     onClick={startProject}
                     externalClassName={'get-started-button'}
-                />}
+                />} */}
             </div>
         </div>
     );

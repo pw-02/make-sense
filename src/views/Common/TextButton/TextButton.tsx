@@ -21,7 +21,8 @@ export const TextButton = (props:IProps) => {
             externalClassName,
             {
                 'active': isActive,
-                'disabled': isDisabled
+                'disabled': isDisabled,
+                // 'visible': isDisabled
             }
         );
     };

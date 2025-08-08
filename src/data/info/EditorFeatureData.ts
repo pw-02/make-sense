@@ -7,9 +7,9 @@ export interface IEditorFeature {
 export const EditorFeatureData: IEditorFeature[] = [
 
     {
-        displayText: 'HARNESSING THE DATA REVOLUTION FOR FIRE SCIENCE',
+        displayText: 'Training Data Development for Lot-Level Plant and Soil Property Classification',
         imageSrc: 'ico/open-source.png',
-        imageAlt: 'Increasing the capacity of Nevada for wildland fire research, education and workforce development',
+        imageAlt: 'Tasks: Image Classification, Object Detection | \n Label Types: Bounding Boxes | Output Formats: JSON, CSV',
     },
 
 ];
