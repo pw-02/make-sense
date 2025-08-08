@@ -9,7 +9,7 @@ export const EditorFeatureData: IEditorFeature[] = [
     {
         displayText: 'Training Data Development for Lot-Level Plant and Soil Property Classification',
         imageSrc: 'ico/open-source.png',
-        imageAlt: 'Tasks: Image Classification, Object Detection | \n Label Types: Bounding Boxes | Output Formats: JSON, CSV',
+        imageAlt: 'Supported Tasks: Image Classification, Object Detection | Label Types: Rectangle | Output Formats: JSON, CSV',
     },
 
 ];

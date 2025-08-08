@@ -242,19 +242,21 @@
 
 
  .EditorFeatureSubLabel {
-  width: 570px;
+  max-width: 640px;
   user-select: none;
   color: #ffb84d; /* warm orange/gold for values */
   font-size: 18px;
   font-weight: 10;
   text-align: center;
   padding: 10px 0;
+  
 }
 .pipe-separator {
   color: #fff; /* white pipes */
 }
 .feature-heading {
-  font-weight: 900;
+  font-weight: 750;
+  font-size: 18px;
   color:#ffb84d; /* pure white for headings on black */
   //  text-decoration: underline;   //underline
 }
